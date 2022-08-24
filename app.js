@@ -9,7 +9,7 @@ var indexRouter = require("./routes/index");
 
 var app = express();
 
-var isProd = false;
+var isProd = process.env.NODE_ENV === "production";
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
