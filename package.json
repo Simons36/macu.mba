@@ -1,0 +1,39 @@
+{
+	"name": "web-share",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"start": "node ./bin/www",
+		"devstart": "SET DEBUG=myapp:* & nodemon ./bin/www",
+		"build": "browserify public/javascripts > public/javascripts/bundle.js"
+	},
+	"dependencies": {
+		"cookie-parser": "~1.4.6",
+		"debug": "~4.3.4",
+		"express": "~4.18.1",
+		"http-errors": "~2.0.0",
+		"morgan": "~1.10.0",
+		"pug": "^3.0.2",
+		"compression": "1.7.4",
+		"cors": "2.8.5",
+		"create-torrent": "5.0.4",
+		"date-fns": "2.29.2",
+		"drag-drop": "7.2.0",
+		"escape-html": "1.0.3",
+		"jszip": "3.10.1",
+		"prettier-bytes": "1.0.4",
+		"rollbar": "2.25.1",
+		"simple-get": "4.0.1",
+		"simple-peer": "9.11.1",
+		"throttleit": "1.0.0",
+		"thunky": "1.1.0",
+		"upload-element": "1.0.1",
+		"webtorrent": "1.8.26",
+		"qrcode": "1.5.1"
+
+	},
+	"devDependencies": {
+		"browserify": "17.0.0",
+		"nodemon": "^2.0.19"
+	}
+}
