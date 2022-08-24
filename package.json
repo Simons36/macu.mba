@@ -3,7 +3,7 @@
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
-		"start": "node run build && node ./bin/www",
+		"start": "node ./bin/www",
 		"devstart": "SET DEBUG=myapp:* & nodemon ./bin/www",
 		"build": "browserify public/javascripts > public/javascripts/bundle.js"
 	},
