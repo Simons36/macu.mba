@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+    macumba:
+        image: ghcr.io/corrreia/macu.mba:master
+        # volumes:
+        #     - type: bind
+        #       source: ./configs
+        #       target: /app/configs
+        ports:
+            - "3000:8001"
+        environment:
+            TZ: Europe/Lisbon # default timezone for crontab and other date related stuff
+        restart: unless-stopped

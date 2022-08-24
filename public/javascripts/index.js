@@ -227,7 +227,7 @@ function onTorrent(torrent) {
 
 	var canvas = document.getElementById("qr");
 	//get page link
-	link = window.location.href + torrent.infoHash;
+	link = window.location.href + "#" + torrent.infoHash;
 	QRCode.toCanvas(canvas, link, function (error) {
 		if (error) console.error(error);
 		console.log("success!");
