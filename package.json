@@ -3,7 +3,7 @@
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
-		"start": "node ./bin/www",
+		"start": "node run build && node ./bin/www",
 		"devstart": "SET DEBUG=myapp:* & nodemon ./bin/www",
 		"build": "browserify public/javascripts > public/javascripts/bundle.js"
 	},
@@ -30,7 +30,6 @@
 		"upload-element": "1.0.1",
 		"webtorrent": "1.8.26",
 		"qrcode": "1.5.1"
-
 	},
 	"devDependencies": {
 		"browserify": "17.0.0",
